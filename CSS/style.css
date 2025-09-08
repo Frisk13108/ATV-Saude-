@@ -44,9 +44,13 @@ header ul li{
   color: #7D7987;
   padding: 0 20px;
 }
+header ul li.atual{
+  color: black;
+}
 
 /*a partir daqui, é melhor colocar header section.saberMais*/
-/* HEADER SECTION SABER MAIS */
+
+/* ============== HEADER SECTION SABER MAIS ====================*/
 
 header section.saberMais{
 padding: 3vw; /*adicionei espaçamento interno*/
@@ -65,12 +69,18 @@ header section.saberMais span{
 header p{
   color: #7D7987;
 }
+header h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2.5vw;
+  max-width: 26vw;
+}
 
 header button{
   background-color: #458FF6;
   color: white;
-  padding: 5px 20px 5px 20px;
-  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
 }
 
 /* apagar este, por estar pegando todas as imagens
