@@ -1,21 +1,25 @@
 :root {
   --main-bg-color: brown;
-   font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-a{
-    text-decoration: none; /* remove o sublinhado dos links */
-    color: black; /* altera a cor de todos os links das páginas */
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
 }
 
 /*---------------Header---------------*/
 /* não é recomendado fazer isso, pq vai ser muito ruim em diferentes telas
 header nav h2{
   margin-right: 60vw;
-}*/ 
+}*/
 
-header{
-padding: 2vw 3vw; /*em vez daquilo de cima, use o padding, que vai adicionar espaçamento interno ao oq vc escolher*/
+header {
+  padding: 2vw 10vw;
+  /*em vez daquilo de cima, use o padding, que vai adicionar espaçamento interno ao oq vc escolher*/
 }
 
 header nav {
@@ -26,25 +30,31 @@ header nav {
 }
 
 /*transforma a elipse e o saude em div pra juntá-los*/
-header div.logo{
-display: flex; /*para deixar eles alinhados*/
-gap: 10px; /*para eles n ficarem colados*/
-align-items: center; /*alinha verticalmente, pro texto n ficar mt em cima ou em baixo*/
+header div.logo {
+  display: flex;
+  /*para deixar eles alinhados*/
+  gap: 10px;
+  /*para eles n ficarem colados*/
+  align-items: center;
+  /*alinha verticalmente, pro texto n ficar mt em cima ou em baixo*/
 }
 
 /*diminuir o tamanho da elipse (img). nao recomendo por height, apenas width pq aí ele diminui em escala. e recomendo por em porcentagem pra se adaptar em diferentes telas*/
-header nav img{
-width: 60%;
+header nav img {
+  width: 100%;
 }
-header nav ul{
+
+header nav ul {
   display: flex;
-  
+
 }
-header ul li{
+
+header ul li {
   color: #7D7987;
   padding: 0 20px;
 }
-header ul li.atual{
+
+header ul li.atual {
   color: black;
 }
 
@@ -52,35 +62,44 @@ header ul li.atual{
 
 /* ============== HEADER SECTION SABER MAIS ====================*/
 
-header section.saberMais{
-padding: 3vw; /*adicionei espaçamento interno*/
-display: flex;
-justify-content: space-between; /*adicionei display e space-between para deixar as coisas lado a lado*/
+header section.saberMais {
+  padding: 3vw 0;
+  /*adicionei espaçamento interno*/
+  display: flex;
+  justify-content: space-between;
+  /*adicionei display e space-between para deixar as coisas lado a lado*/
 }
 
-header section.saberMais div.textos{ /*aqui eu coloco display block, pros textos em si n ficarem lado a lado*/
-display: block;
+header section.saberMais div.textos {
+  /*aqui eu coloco display block, pros textos em si n ficarem lado a lado*/
+  display: block;
+  margin-top: 10rem;
+  /*margin-right: 14.5rem;*/
+  padding: 0 0 0 5vw;
 }
 
-header section.saberMais span{
+header section.saberMais span {
   color: #458FF6;
 }
 
-header p{
+header p {
   color: #7D7987;
-}
-header h2{
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 2.5vw;
-  max-width: 26vw;
+  line-height: 25px;
+  margin: 25px 0 30px;
 }
 
-header button{
+header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  max-width: 32vw;
+}
+
+header button {
   background-color: #458FF6;
   color: white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 30px;
+  padding: 10px 35px 10px 20px;
+  border-radius: 56px;
+
 }
 
 /* apagar este, por estar pegando todas as imagens
@@ -88,22 +107,99 @@ header img{
   width: 30vw;
 }*/
 
-header section.saberMais p{
- text-align: right;
+
+
+
+
+/* ==================== CUIDADOS ============================*/
+
+section.cuidados{
+text-align: center;
+padding: 2vw 10vw;
 }
 
-header section.saberMais h2{
-  font-size: 4vw;
+section.cuidados h2 span{
+font-size: 2.5rem;
+font-weight: bold;
+border-bottom: 1px solid black;
+padding-bottom: 20px;
+}
+
+section.cuidados > p {
+  color: #7D7987;
+  margin: 40px 25rem 0 25rem;
+  line-height: 25px;
+}
+
+
+section.cuidados div ul{
+display: flex;
+justify-content: space-between;
+text-align: left;
+margin-top: 60px;
+}
+
+section.cuidados div ul li{
+border: 1px solid #7D7987;
+border-radius: 10px;
+padding: 10px 3vw 25px 2vw;
+margin: 0 3vw;
+}
+
+section.cuidados div ul li h3{
+  color: black;
   font-weight: bold;
+  padding: 15px 0 10px 0;
+  font-size: 20px;
 }
 
-/* CUIDADOS */
-section.cuidados p{
+section.cuidados div ul li p{
   color: #7D7987;
 }
-section.cuidados div ul li{
-  display: flex;
-  justify-content: space-between;
+section.cuidados button{
+  background-color: white;
+  color: #458FF6;
+  border: 1px solid #458FF6;
+  border-radius: 55px;
+  padding: 10px 2vw 10px 2vw;
+  margin-top: 4vw;
+  text-align: center;
 }
 
+/* =======================DEPOIMENTOS========================= */
+section.depoimentos{
+  background-color: #5A98F2;
+  color: white;
+  margin: 0 14rem;
+  border-radius: 24px;
+  padding-bottom: 3rem;
+}
+section.depoimentos div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 3rem 15rem;
+}
+section.depoimentos h2{
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 4.5rem 0 0 0;
+  font-weight: bold;
+
+}
+
+section.depoimentos h2 span{
+  border-bottom: 2px solid white ;
+  padding-bottom: 15px;
+}
+
+footer{
+  background-color: #458FF6;
+  margin: 5vw 0 0 0 ;
+  color: white;
+}
+
+
 /*agora acredito que vc consegue arrumar o resto, que é basicamente só usar as mesmas coisas q eu falei :)*/
+
