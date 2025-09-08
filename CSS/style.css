@@ -82,6 +82,11 @@ header section.saberMais p{
  text-align: right;
 }
 
+header section.saberMais h2{
+  font-size: 4vw;
+  font-weight: bold;
+}
+
 /* CUIDADOS */
 section.cuidados p{
   color: #7D7987;
